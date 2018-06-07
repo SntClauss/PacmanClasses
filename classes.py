@@ -15,7 +15,6 @@ class Status(Enum):
     dead = 1
     frightened = 2 
     powered = 3
-
 class Character:
     direction = Direction.top
     speed = 0
@@ -67,4 +66,42 @@ class Maze():
     def reset():
         return
     def win():
+        return
+    
+class Collectable():
+  score = 0
+  displayScore = False
+  x = 0
+  y = 0
+  def consume():
+        return
+  def sideEffect():
+        return
+  def displayScore():
+        return
+    
+class Fruit(Collectable):
+    def __init__(self, Collectable):
+        self = Collectable
+
+class Pill(Collectable):
+    def __init__(self, Collectable):
+        self = Collectable
+    
+class PowerPill(Pill):
+    def __init__(self, Pill):
+        self = Pill
+        
+    def activateSideEffect():
+        return
+class Tile(Character, Collectable):
+    type = enum
+    x = 0
+    y = 0
+    char = Character
+    item = Collectable
+    
+    def getAllTileDirection():
+        return
+    def getFromPosition(x,y):
         return
