@@ -34,6 +34,8 @@ class Ghost(Character):
     status = Status.alive
     scatterTimer = 0
     frightenedTimer = 0
+	def __init__(self, Character):
+        self = Character
     def updateScore():
         return
     def leaveCage():
@@ -49,6 +51,8 @@ class Ghost(Character):
 class Pacman(Character):
     killStreak = 0
     lastControl = Direction.top
+	def __init__(self, Character):
+        self = Character
     def control(direction):
         return
     def collide():
