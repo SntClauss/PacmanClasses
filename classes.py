@@ -105,7 +105,7 @@ class Tile(Character, Collectable):
     char = Character
     item = Collectable
     
-    def getAllTileDirection():
+    def getNextTile(direction):
         return
     def getFromPosition(x,y):
         return
